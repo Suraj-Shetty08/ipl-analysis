@@ -7,7 +7,7 @@
 
 ## 📌 Objective
 
-Analyzed IPL match and ball-by-ball data to uncover performance patterns across batsmen, bowlers, teams, and match conditions — and visualized the findings in an interactive Tableau dashboard.
+Analyzed IPL match and ball-by-ball data to uncover performance patterns across batsmen, bowlers, teams, and match conditions, and visualized the findings in an interactive Tableau dashboard.
 
 ---
 
