@@ -1,17 +1,21 @@
-# 🏏 IPL Analysis Dashboard
+#  IPL Analysis Dashboard
 
 **Tools:** MySQL · Tableau  
 **Dataset:** IPL match & delivery data (2008–2022) | 950+ matches · 200,000+ deliveries
 
 ---
 
-## 📌 Objective
+##  Objective
 
 Analyzed IPL match and ball-by-ball data to uncover performance patterns across batsmen, bowlers, teams, and match conditions, and visualized the findings in an interactive Tableau dashboard.
 
 ---
 
-## 📊 Dashboard Preview
+## Dataset
+
+The dataset used consists of two seperate CSV files : matches and deliveries. These files contain the information of each match summary and ball by ball details, respectively. Source: [IPL complete dataset-Kaggle](https://www.kaggle.com/datasets/patrickb1912/ipl-complete-dataset-20082020/data?select=deliveries.csv)
+
+##  Dashboard Preview
 
 ![IPL Analysis Dashboard](ipl_analysis.png)
 
@@ -19,7 +23,7 @@ Analyzed IPL match and ball-by-ball data to uncover performance patterns across 
 
 ---
 
-## 🔍 Key Insights
+##  Key Insights
 
 - **Mumbai Indians** lead all-time wins with 140+ matches, with a win rate only lower than arch rivals Chennai Super Kings.
 - **Virat Kohli** is the highest run-scorer by a ~1,200 run margin over the next batter.
@@ -31,7 +35,7 @@ Analyzed IPL match and ball-by-ball data to uncover performance patterns across 
 
 ---
 
-## 🛠️ SQL Queries Overview
+##  SQL Queries Overview
 
 | # | Query | Purpose |
 |---|-------|---------|
@@ -46,7 +50,7 @@ Analyzed IPL match and ball-by-ball data to uncover performance patterns across 
 
 ---
 
-## 🧹 Data Cleaning Highlights
+##  Data Cleaning Highlights
 
 - Standardized historical team name changes: `Royal Challengers Bangalore → Bengaluru`, `Kings XI Punjab → Punjab Kings`, `Delhi Daredevils → Delhi Capitals`
 - Handled `NULL` values in `result_margin`, `target_runs`, and `target_overs` (originally stored as `'NA'` strings)
@@ -55,7 +59,7 @@ Analyzed IPL match and ball-by-ball data to uncover performance patterns across 
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 1. Import `matches.csv` and `deliveries.csv` into MySQL using `LOAD DATA INFILE`
 2. Run `ipl_analysis.sql` to create the schema, clean data, and execute all queries
